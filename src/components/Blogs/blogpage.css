@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+.blogPageContainer {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blogPageBox {
+  width: 80%;
+}
+.blogPageHeader {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.blogPageButton {
+  padding: 0.5rem !important;
+  font-size: 1rem !important;
+  color: #fff !important;
+  background-color: #000 !important;
+  border-radius: 10px !important;
+  width: 15% !important;
+  cursor: pointer !important;
+  transition: all 0.5s ease-in-out !important;
+  border: 2px solid #000 !important;
+  display: flex !important;
+  justify-content: center !important;
+  margin-left: 1rem !important;
+}
+.blogPageButton:hover {
+  color: #000 !important;
+  background-color: #fff !important;
+  border: 2px solid #000 !important;
+}
+.blogPageTitleBox {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.blogPageAuthorBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-left: 20%;
+  margin-top: 1rem;
+}
+.blogPageTitle {
+  border: none;
+  font-size: 4rem;
+  font-family: "Patrick Hand", cursive;
+  font-weight: 600;
+  padding: 1rem;
+  padding-bottom: 0;
+  width: 100%;
+  resize: none;
+  letter-spacing: 0.1rem;
+  background: transparent;
+}
+.blogPageAuthor {
+  font-size: 1.5rem;
+  font-family: "Patrick Hand", cursive;
+  font-weight: 500;
+  color: rgb(83, 83, 83) !important;
+}
+.blogPageDate {
+  font-size: 1rem;
+  font-family: "Patrick Hand", cursive;
+  color: rgb(90, 90, 90);
+  font-weight: bold;
+}
+.blogPageMain {
+  height: auto !important;
+}
+.blogPageStory {
+  max-width: 95% !important;
+  width: 95% !important;
+  min-width: 95% !important;
+  min-height: auto !important;
+  border: none;
+  font-family: normal;
+  font-size: 1.3rem;
+  padding: 1rem;
+  background: transparent;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+.blogPageDateBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+.blogPageDelete {
+  margin-left: 1rem;
+  font-size: 2rem !important;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: rgb(87, 85, 85) !important;
+}
+.blogPageDelete:hover {
+  font-size: 2.2rem !important;
+  color: #000 !important;
+}
+
+.blogPageLogo {
+  position: absolute;
+  height: 70%;
+  width: 70%;
+  top: 10%;
+  object-fit: contain;
+  right: 0%;
+  opacity: 0.2;
+  z-index: -10;
+}
+.blogPageLikeBtn{
+  display: flex;
+  align-items:center;
+  font-weight: bold;
+}
+.thumbUp{
+  margin: 1rem;
+  margin-bottom: -2rem;
+  cursor: pointer;
+  font-size: 2.2rem !important;
+}
+@media screen and (max-width: 768px) {
+.blogPageTitle{
+  font-size: 1.5rem;
+  /* height:auto !important; */
+  margin-bottom:2rem;
+}
+.blogPageLikeBtn{
+  margin-bottom: 2rem;
+}
+.blogPageAuthorBox{
+  flex-direction: column;
+}
+.blogPageDateBox{
+  margin-top: 2rem;
+  width: 100%;
+}
+}

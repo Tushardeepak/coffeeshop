@@ -1,0 +1,94 @@
+.homeContainer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 100vh;
+}
+.homeBackground {
+  width: 60%;
+  height: 75%;
+  object-fit: contain;
+  top: 0;
+  left: 0;
+  /* z-index: -1; */
+  filter: grayscale(40%);
+  transition: all 0.5s ease-in-out;
+}
+.homeLogo {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  height: 50%;
+  width: 70%;
+  object-fit: cover;
+  opacity: 0.2;
+  transform: scale(0.6);
+  z-index: -10;
+}
+.homeBackground:hover {
+  filter: grayscale(0%);
+}
+.homeTitleBox {
+  margin: 5rem;
+  margin-left: 10rem;
+  width: 35%;
+}
+.homeTitle {
+  color: black;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: "Calligraffitti", cursive;
+}
+.homeTitle span {
+  font-family: "Calligraffitti", cursive;
+  font-size: 7rem;
+  margin: 2rem;
+}
+.homeButton {
+  font-family: "Calligraffitti", cursive;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: #000;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.homeButton:hover {
+  letter-spacing: 0.2rem;
+}
+.homeTitleMobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .homeContainer {
+    flex-direction: column;
+  }
+  .homeTitle {
+    display: none;
+  }
+  .homeTitleBox{
+    width: 80%;
+    margin-top: 10rem;
+  }
+  .homeTitleMobile {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: "Calligraffitti", cursive;
+    width: 100% !important;
+  }
+  .homeTitleMobile span {
+    font-family: "Calligraffitti", cursive;
+    font-size: 7rem;
+  }
+  .homeBackground {
+    width: 140% !important;
+    height: 140% !important;
+    margin-left:90%;
+  }
+}
