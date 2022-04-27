@@ -4,8 +4,10 @@ import { closeLoading } from "../store/action/loaderAction";
 import baseURL from "../utils/baseURL";
 
 export const getStories = () => {
+  console.log("getStories");
   return (dispatch) => {
-    axios.get(`${baseURL}/getStories`).then((response) => {
+    axios.post(`${baseURL}/getStories`).then((response) => {
+      console.log(response.data)
       dispatch(getStoriesAction(response.data));
       dispatch(closeLoading());
     });
@@ -17,7 +19,7 @@ export const getStory = async (id) => {
     id: id,
   });
   console.log(response);
-  return response.data[0];
+  return response.data[0] === undefined ? response.data : response.data[0];
 };
 
 export const deleteStory = async (id) => {
